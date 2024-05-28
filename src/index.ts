@@ -34,7 +34,7 @@ databaseService.connect()
 
 // Tạo folder upload
 initFolder()
-
+app.get("/", (req, res) => res.send("Express on Vercel"));
 // Gọi là route handler
 app.use('/api/v1/users', userRouters)
 app.use('/api/v1/address', addressRouter)
